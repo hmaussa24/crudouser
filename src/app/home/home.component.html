@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Telefono</td>
+            <td>E-mail</td>
+            <td>Direccion</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.apellido}}</td>
+            <td>{{user.telefono}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.direccion}}</td>
+            <td><a class="btn btn-primary btn-sm" routerLink="/add/{{user.id}}">Ver/editar</a></td>
+            <td><a class="btn btn-danger btn-sm" (click)="delete(user.id)">Eliminar</a></td>
+
+        </tr>
+
+    </tbody>
+  </table>

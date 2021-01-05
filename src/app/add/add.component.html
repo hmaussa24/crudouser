@@ -1,0 +1,23 @@
+<h3>Registrar usuario</h3>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label" >Nombre</label>
+    <input [(ngModel)]="user.name" type="text" class="form-control" id="name" name="name" placeholder="Juan ">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label" >Apellido</label>
+    <input [(ngModel)]="user.apellido" type="text" class="form-control" id="apellido" name="apellido" placeholder="Perez">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label" >Telefono</label>
+    <input [(ngModel)]="user.telefono" type="text" class="form-control" id="telefono" name="telefono" placeholder="3137950065">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label" >E-mail</label>
+    <input [(ngModel)]="user.email" type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Direccio</label>
+    <input [(ngModel)]="user.direccion" type="text" class="form-control"  placeholder="calle 12#  1 -20" id="direccion" name="direccion">
+</div>
+<button (click)="saveUser()" class="btn btn-primary">Enviar</button>
