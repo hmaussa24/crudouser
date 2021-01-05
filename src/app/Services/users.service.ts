@@ -6,7 +6,7 @@ import {user} from '../interfaces/user';
   providedIn: 'root'
 })
 export class UsersService {
-  API_ENDPOINT = 'http://localhost:8000/api/auth/'
+  API_ENDPOINT = 'http://inmyhouse.co/cruduserback/public/api/auth/'
   constructor(private httpClient: HttpClient) {}
 
   get(){
